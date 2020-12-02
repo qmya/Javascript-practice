@@ -125,4 +125,18 @@ if (age >= 18) {
   console.log("eligible for driving 🚗");
 } else {
   console.log("She is not permitted to drive 🙅🏼‍♀️");
+  const yearLeftToDrive = 18 - age;
+  console.log(
+    `Sarah have to wait ${yearLeftToDrive} years to start driving 😊`
+  );
 }
+
+//if else without console.log
+const birthYear = 1995;
+let century = "";
+if (birthYear <= 2000) {
+  century = "20th century";
+} else {
+  century = "21th century";
+}
+console.log(century);
