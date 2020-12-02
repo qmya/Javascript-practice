@@ -168,3 +168,11 @@ const inputYear = "1995";
 const changeStringToNumber = Number(inputYear);
 console.log(changeStringToNumber, inputYear);
 console.log(changeStringToNumber + 18);
+
+//if you try to convert a string to a number that is not a number in real life
+//type conversion
+console.log(Number("Qandeel")); //it will give you that this is not a number 😂
+console.log(typeof "Qandeel");
+//converting a Number to a String
+console.log(String(23));
+console.log(typeof 23); // we got white 23 which means its converted into a string "23" 👍🏽
