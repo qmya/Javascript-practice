@@ -192,3 +192,11 @@ console.log("23" / "3");
 
 //booleans
 console.log("23" > "10"); // yes it works 😎
+
+let n = "1" + 1; // "1"+1=11 also plus treat it like a string
+console.log(n);
+n = n - 1; //11-1=10
+console.log(n);
+
+let m = "5" - 2; // minus always convert the string to a number
+console.log(m);
