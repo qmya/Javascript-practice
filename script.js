@@ -170,9 +170,25 @@ console.log(changeStringToNumber, inputYear);
 console.log(changeStringToNumber + 18);
 
 //if you try to convert a string to a number that is not a number in real life
-//type conversion
+//type conversion 😎
 console.log(Number("Qandeel")); //it will give you that this is not a number 😂
 console.log(typeof "Qandeel");
 //converting a Number to a String
 console.log(String(23));
 console.log(typeof 23); // we got white 23 which means its converted into a string "23" 👍🏽
+
+//type coersion: when an operator is dealing with two types e.g string & number 🤓
+console.log("I am " + 23 + " years old"); // Here the number is converted to string because of an operator . So when ever there is a number in between a string an ✚ operator is used it will convert it a string
+
+// Not all numbers are converted in to string
+console.log("23" - "10" - 3);
+//- operators actually convert the strings to the number
+
+console.log("23" * "3");
+//convert the string to a number and ✖ it.
+
+console.log("23" / "3");
+//convert the string to a number and ➗
+
+//booleans
+console.log("23" > "10"); // yes it works 😎
