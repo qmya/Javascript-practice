@@ -81,15 +81,15 @@ TEST DATA 2: Marks weights 95 kg and is 1.88 m tall. John weights 85 kg and is 1
 // console.log(marksBMI, johnsBMI, compareBMI);
 
 // Test Data # 02
-const marksHeight = 1.88;
-const marksMass = 95;
-const johnsHeight = 1.76;
-const johnsMass = 85;
-const marksBMI = marksMass / marksHeight ** 2;
+// const marksHeight = 1.88;
+// const marksMass = 95;
+// const johnsHeight = 1.76;
+// const johnsMass = 85;
+// const marksBMI = marksMass / marksHeight ** 2;
 
-const johnsBMI = johnsMass / (johnsHeight * johnsHeight);
-const compareBMI = marksBMI > johnsBMI;
-console.log(marksBMI, johnsBMI, compareBMI);
+// const johnsBMI = johnsMass / (johnsHeight * johnsHeight);
+// const compareBMI = marksBMI > johnsBMI;
+// console.log(marksBMI, johnsBMI, compareBMI);
 
 //Strings and templates literals
 // const firstName = "Qandeel";
@@ -140,3 +140,24 @@ if (birthYear <= 2000) {
   century = "21th century";
 }
 console.log(century);
+
+//coding challenge
+//if and else
+const marksHeight = 1.69;
+const marksMass = 78;
+const johnsHeight = 1.95;
+const johnsMass = 92;
+// const BMI = mass / height ** 2;
+const marksBMI = marksMass / marksHeight ** 2;
+
+const johnsBMI = johnsMass / (johnsHeight * johnsHeight);
+
+const compareBMI = marksBMI > johnsBMI;
+console.log(marksBMI, johnsBMI, compareBMI);
+
+//if and else condition
+if (marksBMI > johnsBMI) {
+  console.log("Marks BMI is higher than Johns BMI 💪🏻");
+  const bothBMI = `Mark's BMI ${marksBMI} is higher than John's ${johnsBMI}`;
+  console.log(bothBMI);
+}
