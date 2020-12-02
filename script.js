@@ -118,3 +118,11 @@ multiple
 line`);
 
 // If and else
+age = 15;
+// const isOldEnough = age >= 18;
+if (age >= 18) {
+  //if the condition is true than the it will give us something written inside this {}
+  console.log("eligible for driving 🚗");
+} else {
+  console.log("She is not permitted to drive 🙅🏼‍♀️");
+}
