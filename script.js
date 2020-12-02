@@ -161,3 +161,10 @@ if (marksBMI > johnsBMI) {
   const bothBMI = `Mark's BMI ${marksBMI} is higher than John's ${johnsBMI}`;
   console.log(bothBMI);
 }
+
+// converting the string to the integer to string and vice versa
+const inputYear = "1995";
+//convert the string to an integer
+const changeStringToNumber = Number(inputYear);
+console.log(changeStringToNumber, inputYear);
+console.log(changeStringToNumber + 18);
