@@ -200,3 +200,40 @@ console.log(n);
 
 let m = "5" - 2; // minus always convert the string to a number
 console.log(m);
+
+//truthy and falsy values
+//5 falsy values: 0, '', undefined, null, NaN
+
+console.log(Boolean(0)); //false
+console.log(Boolean(undefined)); //false
+console.log(Boolean("Qandeel")); //true
+console.log(Boolean({})); //true
+console.log(Boolean("")); //false
+
+//type coersion in if and else
+//falsey: 👇🏽
+let money = 0; //0 is a falsey value
+if (money) {
+  //money is not true thats why it went to another condition
+  console.log("Don't spend it all 😛");
+} else {
+  console.log("you should get a job 👀");
+}
+//truth: 👇🏽
+money = 1000; //1000 is a truthy value
+if (money) {
+  //money is not true thats why it went to another condition
+  console.log("Don't spend it all 😛");
+} else {
+  console.log("you should get a job 👀");
+}
+//another example
+
+let height; // doesnot have any value. FALSEY
+if (height) {
+  //false
+  console.log("Yay! height is defined");
+} else {
+  //true
+  console.log("Nope! height is undefined");
+}
