@@ -263,3 +263,30 @@ if (favouriteNumber === 23) {
 // NOT EQUAL TO (LOSS VERSION) 👉🏽 !=
 
 if (favouriteNumber !== 23) console.log("why not 23");
+
+//BOOLEAN LOGIC : THE "AND", "OR" & "NOT" OPERATORS
+const hasDriverLicense = true;
+const hasGoodVision = true;
+const isTired = false;
+console.log(hasDriverLicense && hasGoodVision);
+console.log(hasDriverLicense || hasGoodVision);
+
+//Not operator !
+console.log(!hasDriverLicense);
+console.log(!hasGoodVision);
+
+//example
+const shouldDrive = hasDriverLicense && hasGoodVision;
+if (hasDriverLicense && hasGoodVision) {
+  console.log("Yes, You can drive 🚗");
+} else {
+  console.log("Sorry, you can not drive 🙅🏼‍♀️");
+}
+if (hasDriverLicense && hasGoodVision && !isTired) {
+  console.log("Ready to drive");
+} else {
+  console.log("Sorry, you can not drive 🙅🏼‍♀️");
+}
+
+console.log(hasDriverLicense || hasGoodVision || isTired);
+console.log(hasDriverLicense && hasGoodVision && isTired);
