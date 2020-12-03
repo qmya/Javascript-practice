@@ -237,3 +237,22 @@ if (height) {
   //true
   console.log("Nope! height is undefined");
 }
+//equality operators
+const ageNow = 18; //assignment =
+if (ageNow === 18)
+  console.log("You are now adult and aloud to drive (=== strict equality)"); // comparison ===
+console.log("You are now adult and aloud to drive (== loose equality)");
+//=== strict equality
+//== loose equality
+
+//Prompt
+const favouriteNumber = Number(prompt("What's your favourite number"));
+console.log(typeof favouriteNumber, favouriteNumber); //string
+
+if (favouriteNumber === 23) {
+  //23 = 23
+  console.log("Cool! this is a Number");
+} else if (favouriteNumber == 23) {
+  //here the '23' is converted to 23 by == operator and hence '23'== 23 😁
+  console.log("Cool! this is a string");
+}
