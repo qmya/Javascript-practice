@@ -394,7 +394,37 @@ if (day === "monday") {
 //Expression is a peace of code that produce a value
 //e.g 3+4 is  an expression
 //Statement is a big piece of code that doesnot produce a value by itself
+
+//this is ifelse statement
 if (23 > 10) {
   console.log("23 is bigger");
 }
-//this is ifelse statement
+
+//The condition (ternary) operators
+const newAge = 25;
+//normal ifelse:
+if (newAge >= 18) {
+  console.log("You are eligible to work in Canada");
+}
+//ternary operators
+newAge >= 18
+  ? console.log("You are eligible to work in Canada")
+  : console.log("You are not eligible to work in Canada");
+
+const work = newAge >= 18 ? "eligible ✅" : "not eligible 🚩";
+console.log(work);
+
+let workAge;
+if (newAge >= 18) {
+  workAge = "eligible ✅";
+} else {
+  workAge = "not eligible 🚩";
+}
+console.log(workAge);
+
+console.log(`I am Qandeel and I am ${
+  newAge >= 18 ? "eligible ✅" : "not eligible 🚩"
+} to work in Canada
+`);
+
+//Note : ternary operator is not replacable by ifelse but ternary operator is good for small decisions like ☝🏽
