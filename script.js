@@ -390,3 +390,11 @@ if (day === "monday") {
 } else {
   console.log("undefined day");
 }
+//statement and expressions
+//Expression is a peace of code that produce a value
+//e.g 3+4 is  an expression
+//Statement is a big piece of code that doesnot produce a value by itself
+if (23 > 10) {
+  console.log("23 is bigger");
+}
+//this is ifelse statement
