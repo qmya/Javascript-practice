@@ -290,3 +290,59 @@ if (hasDriverLicense && hasGoodVision && !isTired) {
 
 console.log(hasDriverLicense || hasGoodVision || isTired);
 console.log(hasDriverLicense && hasGoodVision && isTired);
+
+//CODING CHALLENGE 3 📝
+//Calculate the average score for each item , using the test Data below:
+//TEST DATA: Dolphins score 96,108 and 89. Koalas score 88, 91 and 110
+//Solution:
+// const dolphinAverage = (96 + 108 + 89) / 3;
+// console.log(dolphinAverage);
+// const koalasAverage = (88 + 91 + 110) / 3;
+// console.log(koalasAverage);
+//Compare the averages and determine who is the winner
+// if (dolphinAverage > koalasAverage) {
+//   console.log("Dolphin is the winner 🐬 🏆");
+// } else if (koalasAverage > dolphinAverage) {
+//   console.log("Koalas is the winner 🐨 🏆");
+// } else if (dolphinAverage === koalasAverage) {
+//   console.log("DRAW ");
+// }
+//3. BONUS 1: Include a requirement for a minimum score of 100. With this rule, a team only wins if it has a higher score than the other team, and the same time a score of at least 100 points. HINT: Use a logical operator to test for minimum score, as well as multiple else-if blocks 😉
+//TEST DATA BONUS 1: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 123
+//Solution:
+const dolphinAverage = (97 + 112 + 101) / 3;
+console.log(dolphinAverage);
+const koalasAverage = (109 + 95 + 123) / 3;
+console.log(koalasAverage);
+
+if (dolphinAverage > koalasAverage && dolphinAverage >= 100) {
+  console.log("Dolphin is the winner 🐬 🏆");
+} else if (koalasAverage > dolphinAverage && koalasAverage >= 100) {
+  console.log("Koalas is the winner 🐨 🏆");
+} else if (
+  koalasAverage === dolphinAverage &&
+  koalasAverage >= 100 &&
+  dolphinAverage >= 100
+) {
+  console.log("Both are winner 🏆");
+} else if (
+  koalasAverage === dolphinAverage &&
+  koalasAverage != 100 &&
+  dolphinAverage != 100
+) {
+  console.log("No winner");
+}
+//4. BONUS 2: Minimum score also applies to a draw! So a draw only happens when both teams have the same score and both have a score greater or equal 100 points. Otherwise, no team wins the trophy.
+//TEST DATA BONUS 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106
+const dolphinScore = (97 + 112 + 101) / 3;
+const koalasScore = (109 + 95 + 106) / 3;
+
+if (
+  koalasAverage === dolphinScore &&
+  koalasScore >= 100 &&
+  dolphinScore >= 100
+) {
+  console.log("Draw");
+} else {
+  console.log("No one wins");
+}
