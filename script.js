@@ -346,3 +346,47 @@ if (
 } else {
   console.log("No one wins");
 }
+
+//The switch statement
+const day = "wednesday"; //"" gives default value
+switch (
+  day //day === monday (strict equality)
+) {
+  case "monday":
+    console.log("Start new learning");
+    break; // stops on the break
+  case "tuesday":
+    console.log("Start working on the sprint");
+    break;
+  case "wednesday":
+    console.log("discuss the sprint problems");
+    break;
+  case "thursday":
+    console.log("schedule a meeting with the team");
+    break;
+  case "friday":
+    console.log("wrapping up the sprint");
+    break;
+  case "saturday":
+  case "sunday":
+    console.log("enjoy your weekend");
+    break;
+  default:
+    console.log("undefined day");
+}
+// doing the above challenge with if else:
+if (day === "monday") {
+  console.log("Start new learning");
+} else if (day === "tuesday") {
+  console.log("Start working on the sprint");
+} else if (day === "wednesday") {
+  console.log("discuss the sprint problems");
+} else if (day === "thursday") {
+  console.log("schedule a meeting with the team");
+} else if (day === "friday") {
+  console.log("wrapping up the sprint");
+} else if (day === "saturday" || day === "sunday") {
+  console.log("enjoy your weekend");
+} else {
+  console.log("undefined day");
+}
