@@ -238,6 +238,7 @@ if (height) {
   console.log("Nope! height is undefined");
 }
 //equality operators
+//ALWAYS USE THE STRICT VERSION 👉🏽 ===
 const ageNow = 18; //assignment =
 if (ageNow === 18)
   console.log("You are now adult and aloud to drive (=== strict equality)"); // comparison ===
@@ -256,3 +257,9 @@ if (favouriteNumber === 23) {
   //here the '23' is converted to 23 by == operator and hence '23'== 23 😁
   console.log("Cool! this is a string");
 }
+
+//DIFFERENT OPERATOR
+// NOT EQUAL TO (STRICT VERSION) 👉🏽 !==
+// NOT EQUAL TO (LOSS VERSION) 👉🏽 !=
+
+if (favouriteNumber !== 23) console.log("why not 23");
